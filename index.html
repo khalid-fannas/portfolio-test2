@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Khaled Portfolio</title>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" alt="Portfolio logo" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#home" id="test">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i id="hideNav" class="fa-solid fa-xmark"></i>
+                </ul>
+                <i id="showNav" class="fa-solid fa-bars"></i>
+            </nav>
+        </div>
+    </section>
+    <section id="home">
+        <div class="container">
+            <div class="home__text">
+                <h1 class="home__title">Hello ,I am <span>Khaled</span></h1>
+                <p class="home__sub">Full Stack Web Developer</p>
+            </div>
+            <img src="./images/profile pic.jpeg" alt="personal img" class="home__img">
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="about__col1"><img src="./images/ai-generated-8640895_1280.jpg" alt="full stack img" class="about__img">
+            </div>
+            <div class="about__col2">
+                <h2 class="about__title">About Me</h2>
+                <p class="about__sub">Full stack web developer with Computer Science Bachelor degree experience in multiple programming languages , web development and problem solving.</p>
+                <div class="tab__titles">
+                    <p id="skills" class="tab__li"><i class="fa-regular fa-hand-pointer svg1"></i>Skills</p>
+                    <p id="education" class="tab__li"><i class="fa-regular fa-hand-pointer svg2"></i>Education</p>
+                </div>
+                <div id="skillView" class="tab__content">
+                    <p class="tab__sub">Full Stack Developer</p>
+                        <ul>
+                            <li class="tab__item">HTML5</li>
+                            <li class="tab__item">CSS3</li>
+                            <li class="tab__item">JavaScript</li>
+                            <li class="tab__item">React</li>
+                            <li class="tab__item">PostgreSQL</li>
+                            <li class="tab__item">NodeJs</li>
+                            <li class="tab__item">Express</li>
+                            <li class="tab__item">jQuery</li>
+                        </ul>                    
+                </div>
+                <div id="educationView" class="tab__content">
+                    <p class="tab__sub">Al- Balqa' Applied University</p>
+                        <ul>
+                            <li class="tab__item">Computer Science Bachelor’s</li>
+                        </ul>    
+                    <p class="tab__sub">Courses</p>
+                        <ul>
+                            <li class="tab__item">The Complete 2024 Web Development Bootcamp–Udemy</li>
+                            <li class="tab__item">Object Oriented JavaScript–Udacity</li>
+                            <li class="tab__item">Node.js Crash Course–Udacity.</li>
+                            <li class="tab__item">Intro to JavaScript–Udacity.</li>
+                        </ul>                      
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+                <h2 class="projects__header">My Projects</h2>
+                <div class="projects__flex project__grid">
+                        <div class="project__link">
+                            <h3 class="project__title">Dicee Game</h3>
+                            <p class="project__sub">asffffasddasffffasdda</p>
+                            <a href="https://khalid-fannas.github.io/TinDog-page/" target="_blank"><button class="project__but">
+                                View Project</button></a>
+                            </button></a>
+                        </div>
+                        <div class="project__link">
+                            <h3 class="project__title">Dicee Game</h3>
+                            <p class="project__sub">asfffdda asdasd asdas asda asddas</p>
+                            <a href="https://khalid-fannas.github.io/TinDog-page/" target="_blank"><button class="project__but">
+                                View Project</button></a>
+                            </button></a>
+                        </div>
+                        <div class="project__link">
+                            <h3 class="project__title">Simon Game</h3>
+                            <p class="project__sub">Building minigame using jQuery in JS to track the user sequence input compared to the game sequence. Try it!</p>
+                            <a href="https://khalid-fannas.github.io/Simon-Game/" target="_blank"><button class="project__but">
+                                View Project</button></a>
+                            </button></a>
+                        </div> 
+                        <div class="project__link">
+                            <h3 class="project__title">Dice Game</h3>
+                            <p class="project__sub">Building a minigame using DOM in HTML CSS JS, the first player to get five roll higher random dice will win the game. Roll the dice and see if you can win!</p>
+                            <a href=https://khalid-fannas.github.io/Dice-Game target="_blank"><button class="project__but">
+                                View Project</button></a>
+                            </button></a>
+                        </div>  
+                        <div class="project__link">
+                            <h3 class="project__title">Drum Kit</h3>
+                            <p class="project__sub">Manipulating HTML objects using JS DOM to add sound effects on the drums.Try it! </p>
+                            <a href="https://khalid-fannas.github.io/Drum-Kit/" target="_blank"><button class="project__but">
+                                View Project</button></a>
+                            </button></a>
+                        </div>     
+                </div>  
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact__left">
+                    <form id="contact__form">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="formBtn">Submit</button>
+                        <p id="contact__msg"></p>
+                    </form>
+                </div>
+                <div class="contact__right">
+                    <h2 class="contact__header">Contact Me</h2>
+                    <a href="mailto:kha2000.khaled@gmail.com" class="test"><p><i class="fa-solid fa-envelope"></i> kha2000.khaled@gmail.com</p></a>
+                    <p><i class="fa-solid fa-phone"></i> +962796911282</p>
+                    <div class="social__icons">
+                        <a href="https://www.linkedin.com/in/khaled-abu-fannas-7b9992255/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/khalid-fannas" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="images/CV.Khaled-AbuFannas.pdf" download=""><button class="formBtn">
+                        Download CV</button></a>
+                    </button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <p>&copy; 2024 <span class="footer__span">Khaled Abu Fannas.</span> All rights reserved.</p>
+                <div class="social__icons footer__icons">
+                    <a href="https://www.linkedin.com/in/khaled-abu-fannas-7b9992255/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/khalid-fannas" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <ul>
+                    <li><a class="footer__nav" href="#home">Home</a></li>
+                    <li><a class="footer__nav"  href="#about">About</a></li>
+                    <li><a class="footer__nav"  href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="./script.js"></script>
+</body>
+</html>
